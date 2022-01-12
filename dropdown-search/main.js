@@ -11,10 +11,8 @@ window.onload = () => {
     })
 
     searchInput.addEventListener("keyup", () => {
-        // CHECK IF THE INPUT VALUE EQUALS TO THE ITEM LIST
         const inputText = searchInput.value
         let itemList = document.querySelectorAll(".item-country-list");
-        console.log(inputText);
 
         itemList.forEach(item => {
             if (item) {
@@ -28,7 +26,6 @@ window.onload = () => {
     })
 
     itemList.forEach(element => {
-        console.log(element);
         element.addEventListener("click", () => {
             const text = element.innerHTML
             searchInput.value = text
