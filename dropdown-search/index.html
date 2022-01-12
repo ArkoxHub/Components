@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown with search</title>
+
+    <!-- FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/b400a47616.js" crossorigin="anonymous"></script>
+
+    <!-- MY FILES -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <script src="./main.js"></script>
+</head>
+
+<body>
+
+    <h2 class="subtitle">DropDown list with search</h2>
+
+    <div class="form-container">
+        <form id="myForm" action="#" method="post">
+
+            <!-- MY CREATION -->
+            <div class="form-part">
+                <label for="searchInput">Select country 1</label>
+                <i class="input-icon fas fa-search"></i>
+                <input id="searchInput" class="form-input" type="text" title="search" placeholder="Search or select a country">
+
+                <div id="hidden-country-list" class="hide-container">
+                    <ul>
+                        <li class="item-country-list">Spain</li>
+                        <li class="item-country-list">Germany</li>
+                        <li class="item-country-list">Italy</li>
+                        <li class="item-country-list">France</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- NORMAL SELECT LIST DROPDOWN -->
+            <label for="country">Select country 2</label>
+            <div class="form-part">
+                <select id="country" name="countryName" class="form-input">
+                    <option value=""></option>
+                    <option value="Spain">Spain</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Italy">Italy</option>
+                    <option value="France">France</option>
+                </select>
+            </div>
+
+            <!-- DATA LIST -->
+            <div class="form-part">
+                <label for="countryList">Select country 3</label>
+                <input id="countryList" class="form-input" list="countryDatalist" placeholder="Select your country">
+                <datalist id="countryDatalist">
+                    <option value="Spain">
+                    <option value="Germany">
+                    <option value="Italy">
+                    <option value="France">
+                </datalist>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

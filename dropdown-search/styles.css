@@ -1,0 +1,105 @@
+/* GENERAL BEHAVIORS */
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0f172a;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    color: #fff;
+}
+
+.subtitle {
+    padding: 20px;
+    font-size: 2rem;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-container {
+    padding: 20px;
+    background-color: #1e293b;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form-part {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 250px;
+    display: block;
+    padding: 7px 7px 7px 30px;
+    border-color: none;
+    border: none;
+    outline: none;
+}
+
+.form-input:focus,
+.form-input:hover {
+    border: none;
+    border-color: none;
+    outline: dodgerblue;
+}
+
+.form-part i {
+    position: absolute;
+    top: 31px;
+    padding-left: 5px;
+}
+
+.form-part .input-icon {
+    font-size: 1.2rem;
+    color: dodgerblue;
+}
+
+/* HIDDEN LIST */
+#hidden-country-list {
+    background-color: #fff;
+    width: 250px;
+    margin-top: 1px;
+}
+
+#hidden-country-list ul {
+    padding-left: 0px;
+    width: 100%;
+}
+
+#hidden-country-list li {
+    list-style: none;
+    padding: 7px;
+    width: 100%;
+    cursor: pointer;
+    color: black;
+}
+
+#hidden-country-list li:hover {
+    background-color: rgb(115, 165, 214);
+    padding: 5px;
+    border: 2px solid rgb(114, 100, 189);
+    color: #fff;
+}
+
+.hide-container {
+    display: none;
+    transition: all 300ms;
+}
