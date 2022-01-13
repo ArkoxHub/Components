@@ -1,0 +1,46 @@
+:root {
+    --main-bg-color: #0f172a;
+    --main-font: 'monospace'
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+span {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    margin: 50px auto;
+    width: 11ch;
+    font-size: 2rem;
+
+    animation: typing 2s steps(11),
+        blink .5s infinite step-end alternate;
+    overflow: hidden;
+} 
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
